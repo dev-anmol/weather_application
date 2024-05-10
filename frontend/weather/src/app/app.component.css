@@ -1,0 +1,302 @@
+.main-background {
+    background-color: var(--color-bg);
+    height: 100vh;
+    width: 100vw;
+  }
+  
+  .sidebar {
+    background-color: var(--color-bg);
+    border-radius: 2.8rem;
+    height: 58rem;
+    width: 4.8rem;
+    margin-left: 2rem;
+    display: inline-block;
+    display: flex;
+    justify-content: start;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .sidebar-container {
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    align-items: center;
+    justify-content: start;
+  }
+  
+  .sidebar-icon {
+    font-size: x-large;
+    color: #676A6D;
+    margin-top: 20px;
+    padding-top: 15 px;
+  }
+  
+  
+  .topbar-container {
+    background-color: var(--color-bg);
+    position: absolute;
+    top: 2rem;
+    left: 12rem;
+    margin: 0.4rem 0;
+    width: 85vw;
+    font-family: "sansation";
+    font-weight: 400;
+    font-size: 1.7rem;
+    color: #676a6d;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 15px;
+    border-radius: 30px;
+  }
+  
+  .container-1 {
+    display: flex;
+    column-gap: 2rem;
+    flex-direction: row;
+    margin-left: 3rem;
+  }
+  
+  .date {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-family: sans-serif;
+  }
+  
+  .user-pfp {
+    display: inline-block;
+    font-size: xx-large;
+  }
+  
+  
+  .user {
+    text-align: center;
+    border-radius: 100%;
+    display: flex;
+    align-items: center;
+  }
+  
+  .user img {
+    background-color: white;
+  }
+  
+  .container-2 {
+    text-align: center;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    column-gap: 2rem;
+  }
+  
+  .search-city {
+    background-color: var(--color-bg);
+    padding: 1rem 0;
+    border-radius: 2rem;
+    border: none;
+    text-align: center;
+    background-image: url('../assets/glass.png');
+    background-repeat: no-repeat;
+    background-position: 14px 0px;
+    color: #676a6d;
+    font-size: 14px;
+    word-spacing: .6px;
+    background-color: #c4dee0;
+  }
+  
+  .search-button {
+    background-color: var(--color-bg);
+    padding: 1rem 1rem;
+    border: none;
+    color: #676a6d;
+    background-color: #c4dee0;
+    margin-left: 10px;
+    border-radius: 20px;
+  }
+  
+  .search-button:hover {
+    background-color: #0056b3;
+    color: white;
+  
+  }
+  
+  
+  option,
+  .language {
+    background-color: var(--color-bg);
+    border: none;
+    color: #676a6d;
+    padding: 0.8rem 0.5rem;
+    border-radius: 2rem;
+  }
+  
+  .celsius {
+    background-color: #cce8eb;
+    padding: 0.8rem 0.5rem 0.9rem 0.8rem;
+    border-radius: 3.2rem;
+    position: relative;
+    border-radius: border-box;
+    display: flex;
+    margin-right: 0.6rem;
+    color: #676a6d;
+  }
+  
+  .fahrenheit {
+    padding: 0.8rem 0.5rem, 0.9rem, 0.8rem;
+    border-radius: 3.2rem;
+    position: relative;
+    border-radius: border-box;
+    display: flex;
+    margin-right: 0.6rem;
+    align-items: center;
+    justify-content: center;
+    color: #676a6d;
+  }
+  
+  .main-body {
+    display: flex;
+    flex-direction: row;
+    column-gap: 10rem;
+  }
+  
+  .main1 {
+    position: absolute;
+    top: 18rem;
+    left: 15rem;
+    color: var(--color-text);
+    height: 400px;
+    width: 300px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--color-bg);
+    row-gap: 2.5rem;
+    font-size: medium;
+    box-shadow: rgba(172, 165, 165, 0.35) 0px 5px 15px;
+    cursor: pointer;
+    border: 1px solid #6b6e6e;
+  }
+  
+  .main2 {
+    position: absolute;
+    top: 18rem;
+    left: 58rem;
+    height: 400px;
+    width: 300px;
+    color: var(--color-text);
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--color-bg);
+    row-gap: 2.5rem;
+    font-size: medium;
+    box-shadow: rgba(172, 165, 165, 0.35) 0px 5px 15px;
+    cursor: pointer;
+    border: 1px solid #6b6e6e;
+  
+  }
+  
+  .main3 {
+    position: absolute;
+    top: 18rem;
+    left: 100rem;
+    color: var(--color-text);
+    height: 400px;
+    width: 300px;
+    border-radius: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: var(--color-bg);
+    row-gap: 2.5rem;
+    font-size: medium;
+    box-shadow: rgba(172, 165, 165, 0.35) 0px 5px 15px;
+    cursor: pointer;
+    border: 1px solid #6b6e6e;
+  
+  }
+  
+  .temparture {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .constraints {
+    text-align: center;
+    font-size: 24px;
+  }
+  
+  .constraints-name {
+    letter-spacing: 1px;
+    color: #676a6d;
+    text-align: center;
+  }
+  
+  .city-name {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 200px;
+    column-gap: 2rem;
+  }
+  
+  .weather-picture {
+    width: 85px;
+    height: 85px;
+  }
+  
+  .city-name p {
+    font-size: x-large
+  }
+  
+  .main1:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: all;
+    transform: scale(1.02);
+    transition-duration: 0.7s;
+    border: 1px solid #cce8eb;
+  
+  }
+  
+  .main2:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: all;
+    transform: scale(1.02);
+    transition-duration: 0.7s;
+    border: none;
+    border: 1px solid #cce8eb;
+  }
+  
+  .main3:hover {
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    transition: all;
+    transform: scale(1.02);
+    transition-duration: 0.7s;
+    border: none;
+    border: 1px solid #cce8eb;
+  }
+  
+  .toggler {
+    padding: 8px 8px;
+    border: none;
+    border-radius: 12px;
+    background-color: var(--color-bg);
+    text-transform: uppercase;
+    color: #676a6d;
+    cursor: pointer;
+    font-family: sans-serif;
+    letter-spacing: 0.2px;
+  }
+  
+  .toggler:hover {
+    background-color: #0056b3;
+    color: white;
+  }

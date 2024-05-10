@@ -1,0 +1,106 @@
+<div class="main-background">
+  <div class="sidebar-container">
+    <div class="sidebar">
+      <fa-icon [icon]="faHome" class="sidebar-icon"></fa-icon>
+      <fa-icon [icon]="faGear" class="sidebar-icon"></fa-icon>
+    </div>
+  </div>
+  <div class="topbar-container">
+    <div class="container-1">
+      <div class="user">
+        <fa-icon [icon]="faUser" class="user-pfp"></fa-icon>
+      </div>
+      <p class="date">{{today}}</p>
+    </div>
+
+    <div class="container-2">
+      <div>
+        <input type="text" [(ngModel)]="searchCity" placeholder="Search city" class="search-city" />
+        <button (click)="searchWeather()" class="search-button">Search</button>
+      </div>
+      <div>
+        <select name="" id="" class="language">
+          <option value="ENG">ENG</option>
+          <option value="GER">GER</option>
+        </select>
+      </div>
+      <div class="top-temperature">
+        <div class="celsius">C°</div>
+      </div>
+      <button (click)="modetoggle()" class="toggler">Toggle</button>
+    </div>
+  </div>
+  <div class="main-body">
+    <!-- Main1 Section -->
+    <div class="main1" *ngIf="weatherData[0]">
+      <div class="city-name">
+        <img [src]="'../assets/' + weatherData[0]?.weather[0]?.icon + '.png'" alt="" class="weather-picture" />
+        <p>{{ weatherData[0]?.name }}</p>
+      </div>
+      <div class="temperature">
+        <p class="constraints">{{ weatherData[0]?.main?.temp }}°</p>
+        <p class="constraints-name">Temperature</p>
+      </div>
+      <div class="humidity">
+        <p class="constraints">{{ weatherData[0]?.main?.humidity }}%</p>
+        <p class="constraints-name">Humidity</p>
+      </div>
+      <div class="wind-speed">
+        <p class="constraints">{{ weatherData[0]?.wind?.speed }} Km/h</p>
+        <p class="constraints-name">Wind Speed</p>
+      </div>
+      <div class="precipitation">
+        <p class="constraints">{{ weatherData[0]?.weather[0]?.description }}</p>
+        <p class="constraints-name">Description</p>
+      </div>
+    </div>
+
+    <!-- Main2 Section -->
+    <div class="main2" *ngIf="weatherData[1]">
+      <div class="city-name">
+        <img [src]="'../assets/' + weatherData[1]?.weather[0]?.icon + '.png'" alt="" class="weather-picture" />
+        <p>{{ weatherData[1]?.name }}</p>
+      </div>
+      <div class="temperature">
+        <p class="constraints">{{ weatherData[1]?.main?.temp }}°</p>
+        <p class="constraints-name">Temperature</p>
+      </div>
+      <div class="humidity">
+        <p class="constraints">{{ weatherData[1]?.main?.humidity }}%</p>
+        <p class="constraints-name">Humidity</p>
+      </div>
+      <div class="wind-speed">
+        <p class="constraints">{{ weatherData[1]?.wind?.speed }} Km/h</p>
+        <p class="constraints-name">Wind Speed</p>
+      </div>
+      <div class="precipitation">
+        <p class="constraints">{{ weatherData[1]?.weather[0]?.description }}</p>
+        <p class="constraints-name">Description</p>
+      </div>
+    </div>
+
+    <!-- Main3 Section -->
+    <div class="main3" *ngIf="weatherData[2]">
+      <div class="city-name">
+        <img [src]="'../assets/' + weatherData[2]?.weather[0]?.icon + '.png'" alt="" class="weather-picture" />
+        <p>{{ weatherData[2]?.name }}</p>
+      </div>
+      <div class="temperature">
+        <p class="constraints">{{ weatherData[2]?.main?.temp }}°</p>
+        <p class="constraints-name">Temperature</p>
+      </div>
+      <div class="humidity">
+        <p class="constraints">{{ weatherData[2]?.main?.humidity }}%</p>
+        <p class="constraints-name">Humidity</p>
+      </div>
+      <div class="wind-speed">
+        <p class="constraints">{{ weatherData[2]?.wind?.speed }} Km/h</p>
+        <p class="constraints-name">Wind Speed</p>
+      </div>
+      <div class="precipitation">
+        <p class="constraints">{{ weatherData[2]?.weather[0]?.description }}</p>
+        <p class="constraints-name">Description</p>
+      </div>
+    </div>
+  </div>
+</div>

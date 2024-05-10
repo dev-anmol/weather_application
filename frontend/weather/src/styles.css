@@ -1,0 +1,32 @@
+/* You can add global styles to this file, and also import other style files */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    font-family: sans-serif;
+}
+
+html{
+    font-size: 10px;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+}
+
+
+
+:root{
+    --color-bg: #91bfc2;
+    --color-text: rgb(56, 55, 55);
+    --main-color: #c4dee0;
+}
+
+[data-theme="dark"]{
+    --color-bg: #1e1f24;
+    --color-text:rgb(206, 200, 200);
+    --top-color: #E3F2FD;
+    
+}
+
